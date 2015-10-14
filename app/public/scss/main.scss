@@ -1,0 +1,102 @@
+$body-color: #eee;
+$light-blue: #479EE0;
+$dark-blue:	 #000B28;
+
+#tableauViz{
+	min-height: 80vh;
+	min-width: 100%;
+	padding:0px;
+}
+
+body{
+	background-color: $body-color;
+}
+
+.container{
+	width:100%;
+}
+
+.body-content{
+	margin-left: 12em;
+	width:85%;
+	transition: all 0.6s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+header{
+	padding: 0.7em;
+	background-color:$light-blue;
+	color:white;
+	font-size:large;
+	text-transform: uppercase;
+	box-shadow:0px 0px 20px rgba(0,0,0,0.3);
+}
+
+header a{
+	color: #fefefe;
+	letter-spacing:.2em;
+}
+
+.pdsa-sn-wrapper{
+	position:absolute;
+	top: 3.5em;
+	left: 0em;
+	width: 13em;
+	height: 100%;
+	background-color: $dark-blue;
+	transition:  all 0.6s cubic-bezier(.87,-.41,.19,1.44);
+}
+
+.pdsa-sn-wrapper ul{
+	width: 11em;
+	list-style:none;
+	margin-top: 2em;
+	margin-left: 1em;
+	padding:0em;
+}
+
+.pdsa-sn-wrapper ul li{
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-size:smaller;
+	letter-spacing:.2em;
+	color: $light-blue;
+}
+
+.pdsa-sn-wrapper ul li a{
+	font-size:smaller;
+	letter-spacing:.2em;
+	color: $light-blue;
+	padding: 0.5em;
+}
+
+.pdsa-sn-wrapper ul li a span{
+	margin-top:-1em;
+	margin-bottom:-1em;
+	margin-left:1em;
+	padding: -1em 0;
+}
+
+
+.pdsa-sn-wrapper ul .pdsa-sn-brand{
+	margin-left: -0.5em;
+}
+
+
+
+// Media querys
+/* Smartphones (portrait and landscape) ----------- */
+@media all  
+and (max-width : 768px) {
+	.pdsa-sn-wrapper{
+		left: -10em;
+	}
+
+	.pdsa-sn-wrapper ul li a i{
+		padding-left:10em;
+		margin:-1em 0em;
+	}
+
+	.body-content{
+		margin-left: 3em;
+	}
+}
