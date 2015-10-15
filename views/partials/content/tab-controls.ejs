@@ -1,0 +1,26 @@
+<div>
+	<ul class="nav nav-tabs" role="tablist">
+		<li role="presentation">
+			<a href="#inst" role="tab" data-toggle="tab" class="active">Instructions</a>
+		</li>
+		<li role="presentation">
+			<a href="#actions" role="tab" data-toggle="tab">Actions <span class="badge warning">!</span></a>
+		</li>
+		<li role="presentation">
+			<a href="#feedback" role="tab" data-toggle="tab">Feedback</a>
+		</li>
+	</ul> 
+	<div class="tab-content">
+		<div class="tab-pane active" id="inst" role="tabpanel">
+			<h2>Simple instruction on how to use site.</h2>
+		</div>
+		<div class="tab-pane" id="actions" role="tabpanel">
+			<h2>Buttons go here.</h2>
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Graceful Modal - Click to View</button>
+			<% include ./modal %>
+		</div>
+		<div class="tab-pane" id="feedback" role="tabpanel">
+			<h2>Additional Feedback Form</h2>
+		</div>
+	</div>
+</div>

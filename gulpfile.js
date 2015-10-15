@@ -41,8 +41,8 @@ gulp.task('serve',function(){
 	gulp.watch([
 		'./app/public/scss/*.scss',
 		'./app/public/css/*.css',
-		'./views/*.ejs',
-		'./app/public/js/*.js'
+		'./views/**/*.ejs',
+		'./app/public/js/**/*.js'
 		],function(event){
 			server.start()
 		    .then(function() {
