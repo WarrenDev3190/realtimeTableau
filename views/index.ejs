@@ -8,14 +8,20 @@
 </head>
 <body>
 	<div class="container">
+		<div id="onSuccess" class="alert alert-success fade alert-dismissible" role="alert">
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		  <strong>Success</strong>Thank you for your input!
+		</div>
 		<div class="row">
 			<header>
-				<a href="#">HCA Datalab</a>
+				<a href="#"><img class="img-responsive" id="atom" src="imgs/AtomKnockOut_sm.png" alt="HCA Datalab"></a>
 			</header>
 		</div>
 		<% include ./partials/content/navigation %>
 		<% include ./partials/content/main %>
 	</div>
+	<% include ./partials/content/modal %>
+
 	<% include ./partials/resources/scripts %>
 </body>
 </html>

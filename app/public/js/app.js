@@ -1,6 +1,29 @@
 requirejs.config({
 	paths:{
 		app:'../public/js/app'
+	},
+	packages:[
+		{
+			name:'lodash',
+			location:'../libs/lodash',
+			main:'lodash.min.js'
+
+		},
+		{
+			name:'q',
+			location:'../libs/q',
+			main:'q.js'
+		},
+		{
+			name:'moment',
+			location:'../libs/moment',
+			main:'moment.js'
+		}
+	],
+	map:{
+		"*":{
+			underscore:"../libs/lodash/lodash.min.js"
+		}
 	}
 });
 

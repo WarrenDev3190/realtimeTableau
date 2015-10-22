@@ -16,6 +16,14 @@ define(function(){
 		    }
 		  };
 		 return viz = new tableau.Viz(placeholderDiv, url, options);
+		},
+		getWorkbook: function(viz){
+			var workbook = viz.getWorkbook();
+			return workbook;
+		},
+		getActiveSheet: function(wb){
+			var sheet = wb.getActiveSheet();
+			return sheet;
 		}
 	}
 });
